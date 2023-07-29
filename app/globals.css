@@ -1,27 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: Inter;
+}
+
+.flexCenter {
+  @apply flex items-center justify-center;
+}
+
+.flexBetween {
+  @apply flex items-center justify-between;
+}
+
+.flexStart {
+  @apply flex items-center justify-start;
+}
+
+.text-small {
+  @apply text-sm font-medium;
+}
+
+.paddings {
+  @apply px-5 py-6 lg:px-20;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 12px;
+}
+
+.modal-head-text {
+  @apply w-full max-w-5xl text-left text-3xl font-extrabold md:text-5xl;
+}
+
+.no-result-text {
+  @apply my-10 w-full px-2 text-center;
+}
+
+/* Project Details */
+.user-actions_section {
+  @apply fixed right-10 top-20 flex flex-col gap-4 max-md:hidden;
+}
+
+.user-info {
+  @apply flex w-full flex-wrap gap-2 whitespace-nowrap text-sm font-normal;
+}
+
+/* Home */
+.projects-grid {
+  @apply mt-10 grid w-full grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4;
+}
+
+/* Project Actions */
+.edit-action_btn {
+  @apply rounded-lg bg-light-white-400 p-3 text-sm font-medium text-gray-100;
+}
+
+.delete-action_btn {
+  @apply rounded-lg p-3 text-sm font-medium text-gray-100 hover:bg-red-600;
+}
+
+/* Related Project Card */
+.related_project-card {
+  @apply min-h-[197px] min-w-[210px] flex-col rounded-2xl;
+}
+
+.related_project-card_title {
+  @apply absolute bottom-0 right-0 h-1/3 w-full items-end justify-end gap-2 rounded-b-2xl bg-gradient-to-b from-transparent to-black/50 p-4 text-lg font-semibold text-white;
+}
+
+.related_projects-grid {
+  @apply mt-5 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4;
+}
+
+/* Custom Menu */
+.custom_menu-btn {
+  @apply w-full gap-4 rounded-md bg-light-white-100 p-4 text-base capitalize outline-none;
+}
+
+.custom_menu-items {
+  @apply absolute left-0 mt-2 max-h-64 w-fit origin-top-right flex-col overflow-y-auto rounded-xl border border-nav-border bg-white shadow-menu xs:min-w-[300px];
+}
+
+.custom_menu-item {
+  @apply w-full self-start whitespace-nowrap px-5 py-2 text-left text-sm capitalize hover:bg-light-white-100;
+}
+
+/* Footer */
+.footer {
+  @apply paddings w-full flex-col gap-20 bg-light-white;
+}
+
+.footer_copyright {
+  @apply w-full text-sm font-normal max-sm:flex-col;
+}
+
+.footer_column {
+  @apply flex min-w-max flex-1 flex-col gap-3 text-sm;
+}
+
+/* Form Field */
+.form_field-input {
+  @apply w-full rounded-xl bg-light-white-100 p-4 outline-0;
+}
+
+/* Modal */
+.modal {
+  @apply fixed bottom-0 left-0 right-0 top-0 z-10 mx-auto bg-black/80;
+}
+
+.modal_wrapper {
+  @apply absolute bottom-0 flex h-[95%] w-full flex-col items-center justify-start overflow-auto rounded-t-3xl bg-white px-8 pb-72 pt-14 lg:px-40;
+}
+
+/* Navbar */
+.navbar {
+  @apply gap-4 border-b border-nav-border px-8 py-5;
+}
+
+/* Profile Menu */
+.profile_menu-items {
+  @apply absolute right-1/2 mt-3 min-w-max translate-x-1/2 flex-col rounded-xl border border-nav-border bg-white p-7 shadow-menu sm:min-w-[300px];
+}
+
+/* Profile Card */
+.profile_card-title {
+  @apply absolute bottom-0 right-0 h-1/3 w-full items-end justify-end gap-2 rounded-b-2xl bg-gradient-to-b from-transparent to-black/50 p-4 text-lg font-semibold text-white;
+}
+
+/* Project Form */
+.form {
+  @apply mx-auto w-full max-w-5xl flex-col gap-10 pt-12 text-lg lg:pt-24;
+}
+
+.form_image-container {
+  @apply relative min-h-[200px] w-full lg:min-h-[400px];
+}
+
+.form_image-label {
+  @apply z-10 h-full w-full border-2 border-dashed border-gray-50 p-20 text-center text-gray-100;
+}
+
+.form_image-input {
+  @apply absolute z-30 h-full w-full cursor-pointer opacity-0;
+}
+
+/* Profile Projects */
+.profile_projects {
+  @apply mt-5 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4;
 }
