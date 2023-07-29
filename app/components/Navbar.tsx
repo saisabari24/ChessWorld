@@ -13,23 +13,34 @@ const Navbar = () => {
       <div className="flex-col flexCenter">
         <ul className="nav">
           <li className="nav-item">
-            <a className="nav-link active" href="#home">
+            <a className="nav-link active" href="#">
               Home
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#blog">
-              Blog
+            <a className="nav-link" href="#VideoPlayer">
+              VideoPlayer
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#news">
-              News
+            <a className="nav-link" href="#ChessSubcription">
+              ChessSubcription
             </a>
           </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#Testimonials">
+              Testimonials
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#InfoFooter">
+              InfoFooter
+            </a>
+          </li>
+
           <li className="nav-item">
             <a className="nav-link disabled" href="#">
-              Disabled
+              SignIn & SignUp
             </a>
           </li>
         </ul>

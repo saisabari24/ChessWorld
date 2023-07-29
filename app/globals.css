@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");*/
+/*@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Open+Sans&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,7 +13,7 @@
 }
 
 body {
-  font-family: Inter;
+  font-family: "DMSans";
 }
 
 .flexCenter {
@@ -164,4 +165,12 @@ body {
 /* Profile Projects */
 .profile_projects {
   @apply mt-5 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4;
+}
+
+.section-fill {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

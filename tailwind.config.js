@@ -31,7 +31,8 @@ module.exports = {
         "10xl": "1680px",
       },
       fontFamily: {
-        Rampart: ["Rampart One", "cursive"],
+        // Rampart: ["Rampart One", "cursive"],
+        DMSans: ["DM Sans", "sans-serif"],
       },
     },
   },

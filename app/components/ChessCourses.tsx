@@ -6,7 +6,7 @@ export const ChessCourses = () => {
     <div>
       ChessCourses
       <div className="flex-col align-right">
-        <section className="paddings-50 paf">
+        <section>
           {`" className="absolute inset-y-20 right-80 w-300"`}
           <Image
             src="/ChessCoursesThumbnail.jpg"

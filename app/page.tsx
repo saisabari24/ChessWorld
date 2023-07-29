@@ -8,26 +8,26 @@ import { InfoFooter } from "./components/InfoFooter";
 const Home = () => {
   return (
     <div className="h-full bg-gradient-to-r from-sky-500 to-indigo-500">
-      <section className="flex-start paddings mb-16 flex-col">
-        <div id="ChessCourses">
+      <section className="flex-start flex-col">
+        <section id="ChessCourses" className="section-fill">
           {" "}
           <ChessCourses />
-        </div>
-        <div id="VideoPlayer">
+        </section>
+        <section id="VideoPlayer" className="section-fill">
           {" "}
           <VideoPlayer />
-        </div>
-        <div id="ChessSubcription">
+        </section>
+        <section id="ChessSubcription" className="section-fill">
           <ChessSubcription />
-        </div>
-        <div id="Testimonials">
+        </section>
+        <section id="Testimonials" className="section-fill">
           {" "}
           <Testimonials />
-        </div>
-        <div id="InfoFooter">
+        </section>
+        <section id="InfoFooter" className="section-fill">
           {" "}
           <InfoFooter />
-        </div>
+        </section>
       </section>
     </div>
   );
