@@ -30,6 +30,9 @@ module.exports = {
       maxWidth: {
         "10xl": "1680px",
       },
+      fontFamily: {
+        Rampart: ["Rampart One", "cursive"],
+      },
     },
   },
   plugins: [],
